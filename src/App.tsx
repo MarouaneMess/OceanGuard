@@ -8,6 +8,7 @@ import { DiscoverPage } from './pages/DiscoverPage'
 import { HealthPage } from './pages/HealthPage'
 import { DataPage } from './pages/DataPage'
 import { DonationPage } from './pages/DonationPage'
+import { CommunityPage } from './pages/CommunityPage'
 function App() {
   return (
     <Router basename="/">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/data" element={<DataPage />} />
           <Route path="/topic/:topicId" element={<TopicDetailPage />} />
           <Route path="/donate" element={<DonationPage />} />
+          <Route path="/community" element={<CommunityPage />} />
         </Routes>
       </div>
     </Router>
