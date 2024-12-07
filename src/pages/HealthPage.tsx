@@ -7,7 +7,7 @@ export function HealthPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="pt-16"
+      className="pt-0"
     >
       <HealthIndicators />
       <OceanHealthSection />
