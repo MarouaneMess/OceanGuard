@@ -9,6 +9,8 @@ import { HealthPage } from './pages/HealthPage'
 import { DataPage } from './pages/DataPage'
 import { DonationPage } from './pages/DonationPage'
 import { CommunityPage } from './pages/CommunityPage'
+import { LearningPathPage } from './pages/LearningPathPage'
+
 function App() {
   return (
     <Router basename="/">
@@ -23,7 +25,8 @@ function App() {
           <Route path="/data" element={<DataPage />} />
           <Route path="/topic/:topicId" element={<TopicDetailPage />} />
           <Route path="/donate" element={<DonationPage />} />
-          <Route path="/community" element={<CommunityPage />} />
+          <Route path='/community' element={<CommunityPage />} />
+          <Route path='/learn/:pathId' element={<LearningPathPage />} />
         </Routes>
       </div>
     </Router>

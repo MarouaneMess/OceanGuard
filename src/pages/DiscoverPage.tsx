@@ -290,7 +290,7 @@ export function DiscoverPage() {
 
                 {/* CTA Button - maintenant au bas de la carte */}
                 <Link 
-                //   to={`/learn/${path.id}`}
+                  to={`/learn/${path.id}`}
                   className={`w-full inline-flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r ${path.color} rounded-xl text-white font-semibold hover:shadow-lg transition-all duration-300 mt-auto`}
                 >
                   <span>Commencer le parcours</span>

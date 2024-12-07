@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Heart, Share2, Users, ArrowRight, ExternalLink } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const actions = [
   {
@@ -111,13 +112,13 @@ export function ActionSection() {
           transition={{ delay: 0.7 }}
           className="text-center"
         >
-          <a
-            href="/donnate"
+          <Link
+            to="/donate"
             className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
           >
             <span>Faire un don</span>
             <ExternalLink className="w-5 h-5" />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
