@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wave {
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform-origin: bottom;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.ocean-gradient {
+  background: linear-gradient(45deg, #0ea5e9, #0891b2);
+}
+
+/* Styles pour les cartes */
+.card {
+  @apply bg-white rounded-xl shadow-lg transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-xl transform -translate-y-1;
+}
+
+/* Styles pour les sections */
+.section-container {
+  @apply container mx-auto px-4 py-12;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-center mb-8;
+}
+
+/* Styles pour la navigation */
+.nav-link {
+  @apply px-4 py-2 rounded-lg transition-colors;
+}
+
+.nav-link:hover {
+  @apply bg-blue-50;
+}
+
+/* Animations personnalisées */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
