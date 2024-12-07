@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Home, BarChart, HelpCircle, Heart } from 'lucide-react'
+import { Logo } from './Logo' 
 
 const navItems = [
   { path: '/', label: 'Accueil', icon: Home },
@@ -44,18 +45,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
-              className="w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center"
-            >
-              <span className="text-white font-bold text-xl">O</span>
-            </motion.div>
-            <span className="text-white font-bold text-xl hidden sm:block">
-              OceanBody
-            </span>
-          </Link>
+          <Logo />
 
           {/* Navigation Desktop */}
           <div className="hidden md:flex items-center space-x-1">
