@@ -4,7 +4,9 @@ import { HomePage } from './pages/HomePage'
 import { QuizPage } from './pages/QuizPage'
 import { ExplorerPage } from './pages/ExplorerPage'
 import { TopicDetailPage } from './pages/TopicDetailPage'
-import { OceanHealthSection } from './components/OceanHealthSection'
+import { DiscoverPage } from './pages/DiscoverPage'
+import { HealthPage } from './pages/HealthPage'
+import { DataPage } from './pages/DataPage'
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/explorer" element={<ExplorerPage />} />
+          <Route path="/discover" element={<DiscoverPage />} />
+          <Route path="/health" element={<HealthPage />} />
+          <Route path="/data" element={<DataPage />} />
           <Route path="/topic/:topicId" element={<TopicDetailPage />} />
-          <Route path="/health" element={<OceanHealthSection />} />
         </Routes>
       </div>
     </Router>
