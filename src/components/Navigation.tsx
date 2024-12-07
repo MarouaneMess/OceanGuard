@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Home, BarChart, HelpCircle, Heart } from 'lucide-react'
 import { Logo } from './Logo' 
+import { ThemeToggle } from './ThemeToggle'
 
 const navItems = [
   { path: '/', label: 'Accueil', icon: Home },
@@ -48,7 +49,7 @@ export function Navigation() {
           <Logo />
 
           {/* Navigation Desktop */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-4">
             {/* Navigation Items */}
             {navItems.map((item) => {
               const isActive = location.pathname === item.path
@@ -81,6 +82,9 @@ export function Navigation() {
 
             {/* Separator */}
             <div className="w-px h-8 bg-white/10 mx-2" />
+
+            {/* Theme Toggle */}
+            <ThemeToggle />
 
             {/* Action Items */}
             {actionItems.map((item) => (
@@ -144,6 +148,12 @@ export function Navigation() {
                   </Link>
                 )
               })}
+
+              {/* Separator Mobile */}
+              <div className="h-px bg-white/10 my-4" />
+
+              {/* Theme Toggle Mobile */}
+              <ThemeToggle isMobile />
 
               {/* Separator Mobile */}
               <div className="h-px bg-white/10 my-4" />

@@ -89,3 +89,50 @@
 .animation-delay-4000 {
   animation-delay: 4s;
 }
+
+/* Styles rétro */
+.retro-mode {
+  /* Fond basique */
+  background: #fff !important;
+  
+  /* Typography basique */
+  font-family: "Times New Roman", Times, serif !important;
+  
+  /* Suppression des effets modernes */
+  --tw-blur: none !important;
+  --tw-backdrop-blur: none !important;
+  
+  /* Couleurs basiques */
+  --primary-color: #0000FF !important;
+  --secondary-color: #FF0000 !important;
+}
+
+.retro-mode * {
+  /* Suppression des dégradés */
+  background-image: none !important;
+  
+  /* Bordures basiques */
+  border-radius: 0 !important;
+  
+  /* Suppression des ombres */
+  box-shadow: none !important;
+  
+  /* Transitions instantanées */
+  transition: none !important;
+  
+  /* Animations désactivées */
+  animation: none !important;
+}
+
+.retro-mode button,
+.retro-mode a {
+  background: #e0e0e0 !important;
+  border: 2px outset #d0d0d0 !important;
+  color: #000 !important;
+  padding: 2px 6px !important;
+}
+
+.retro-mode button:active,
+.retro-mode a:active {
+  border-style: inset !important;
+}
