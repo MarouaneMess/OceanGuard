@@ -8,6 +8,7 @@ export interface QuizQuestion {
   category: 'climate' | 'biodiversity' | 'pollution' | 'circulation' | 'chemistry';
   difficulty: 'easy' | 'medium' | 'hard';
   source: string;
+  image?: string;
 }
 
 export const quizQuestions: QuizQuestion[] = [
@@ -20,7 +21,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Le phytoplancton est plus productif que toutes les forêts terrestres combinées.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "National Geographic"
+    source: "National Geographic",
+    image: "https://example.com/image1.jpg"
   },
   {
     id: 2,
@@ -31,7 +33,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Pensez à la hauteur de 1000 tours Eiffel empilées.",
     category: 'biodiversity',
     difficulty: 'easy',
-    source: "NOAA"
+    source: "NOAA",
+    image: "https://example.com/image2.jpg"
   },
   {
     id: 3,
@@ -42,7 +45,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Plus des deux tiers de notre planète bleue sont recouverts d'eau.",
     category: 'climate',
     difficulty: 'easy',
-    source: "NASA"
+    source: "NASA",
+    image: "https://example.com/image3.jpg"
   },
   {
     id: 4,
@@ -53,7 +57,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Les eaux profondes restent très froides même près de l'équateur.",
     category: 'climate',
     difficulty: 'medium',
-    source: "Woods Hole Oceanographic Institution"
+    source: "Woods Hole Oceanographic Institution",
+    image: "https://example.com/image4.jpg"
   },
   {
     id: 5,
@@ -64,7 +69,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Presque un tiers du CO2 que nous émettons finit dans l'océan.",
     category: 'climate',
     difficulty: 'medium',
-    source: "IPCC"
+    source: "IPCC",
+    image: "https://example.com/image5.jpg"
   },
   {
     id: 6,
@@ -75,7 +81,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est à peu près la vitesse d'une marche rapide.",
     category: 'circulation',
     difficulty: 'medium',
-    source: "NOAA"
+    source: "NOAA",
+    image: "https://example.com/image6.jpg"
   },
   {
     id: 7,
@@ -86,7 +93,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Pensez qu'on découvre plusieurs espèces nouvelles chaque jour.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Census of Marine Life"
+    source: "Census of Marine Life",
+    image: "https://example.com/image7.jpg"
   },
   {
     id: 8,
@@ -97,7 +105,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La grande majorité de l'océan n'a jamais été explorée.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "National Geographic"
+    source: "National Geographic",
+    image: "https://example.com/image8.jpg"
   },
   {
     id: 9,
@@ -108,7 +117,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Une cuillère à soupe de sel par verre d'eau.",
     category: 'chemistry',
     difficulty: 'easy',
-    source: "NOAA"
+    source: "NOAA",
+    image: "https://example.com/image9.jpg"
   },
   {
     id: 10,
@@ -119,7 +129,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est plus que l'épaisseur d'une pièce de monnaie.",
     category: 'climate',
     difficulty: 'hard',
-    source: "NASA"
+    source: "NASA",
+    image: "https://example.com/image10.jpg"
   },
   {
     id: 11,
@@ -130,7 +141,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Ces structures sont parmi les plus anciennes constructions vivantes sur Terre.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Marine Biology Institute"
+    source: "Marine Biology Institute",
+    image: "https://example.com/image11.jpg"
   },
   {
     id: 12,
@@ -141,7 +153,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La zone euphotique est la plus peuplée de l'océan.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Scripps Institution of Oceanography"
+    source: "Scripps Institution of Oceanography",
+    image: "https://example.com/image12.jpg"
   },
   {
     id: 13,
@@ -152,7 +165,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Même un petit changement de pH peut avoir des effets importants.",
     category: 'chemistry',
     difficulty: 'hard',
-    source: "IPCC"
+    source: "IPCC",
+    image: "https://example.com/image13.jpg"
   },
   {
     id: 14,
@@ -163,7 +177,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est presque aussi rapide qu'un nageur olympique.",
     category: 'circulation',
     difficulty: 'hard',
-    source: "NOAA"
+    source: "NOAA",
+    image: "https://example.com/image14.jpg"
   },
   {
     id: 15,
@@ -174,7 +189,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Pensez au poids de 800 Tour Eiffel.",
     category: 'pollution',
     difficulty: 'medium',
-    source: "UN Environment Programme"
+    source: "UN Environment Programme",
+    image: "https://example.com/image15.jpg"
   },
   {
     id: 16,
@@ -185,7 +201,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La vie existe même dans les endroits les plus profonds de l'océan.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Deep Ocean Research"
+    source: "Deep Ocean Research",
+    image: "https://example.com/image16.jpg"
   },
   {
     id: 17,
@@ -196,7 +213,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Près de la moitié de l'humanité vit près des côtes.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "UN Ocean Conference"
+    source: "UN Ocean Conference",
+    image: "https://example.com/image17.jpg"
   },
   {
     id: 18,
@@ -207,7 +225,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est plus long que l'existence des États-Unis.",
     category: 'pollution',
     difficulty: 'medium',
-    source: "WWF"
+    source: "WWF",
+    image: "https://example.com/image18.jpg"
   },
   {
     id: 19,
@@ -218,7 +237,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est proche de la température du corps humain.",
     category: 'climate',
     difficulty: 'hard',
-    source: "World Meteorological Organization"
+    source: "World Meteorological Organization",
+    image: "https://example.com/image19.jpg"
   },
   {
     id: 20,
@@ -229,7 +249,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La moitié de ces écosystèmes a disparu.",
     category: 'climate',
     difficulty: 'medium',
-    source: "IPCC"
+    source: "IPCC",
+    image: "https://example.com/image20.jpg"
   },
   {
     id: 21,
@@ -240,7 +261,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est plus lent qu'une marche à pied.",
     category: 'circulation',
     difficulty: 'easy',
-    source: "National Snow and Ice Data Center"
+    source: "National Snow and Ice Data Center",
+    image: "https://example.com/image21.jpg"
   },
   {
     id: 22,
@@ -251,7 +273,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Un quart des espèces marines est en danger.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "IUCN Red List"
+    source: "IUCN Red List",
+    image: "https://example.com/image22.jpg"
   },
   {
     id: 23,
@@ -262,7 +285,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la taille d'une petite ville.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Marine Biology Institute"
+    source: "Marine Biology Institute",
+    image: "https://example.com/image23.jpg"
   },
   {
     id: 24,
@@ -273,7 +297,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est l'équivalent des émissions annuelles de plusieurs pays.",
     category: 'climate',
     difficulty: 'hard',
-    source: "Global Carbon Project"
+    source: "Global Carbon Project",
+    image: "https://example.com/image24.jpg"
   },
   {
     id: 25,
@@ -284,7 +309,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est un processus très lent, plus lent que la croissance des ongles.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Coral Reef Alliance"
+    source: "Coral Reef Alliance",
+    image: "https://example.com/image25.jpg"
   },
   {
     id: 26,
@@ -295,7 +321,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Ces micro-organismes sont les principaux producteurs d'oxygène marin.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "NASA Earth Observatory"
+    source: "NASA Earth Observatory",
+    image: "https://example.com/image26.jpg"
   },
   {
     id: 27,
@@ -306,7 +333,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la zone où la lumière commence à disparaître.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Woods Hole Oceanographic Institution"
+    source: "Woods Hole Oceanographic Institution",
+    image: "https://example.com/image27.jpg"
   },
   {
     id: 28,
@@ -317,7 +345,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La grande majorité des requins, thons et autres grands prédateurs a disparu.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Marine Conservation Institute"
+    source: "Marine Conservation Institute",
+    image: "https://example.com/image28.jpg"
   },
   {
     id: 29,
@@ -328,7 +357,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la vitesse d'un cycliste tranquille.",
     category: 'biodiversity',
     difficulty: 'easy',
-    source: "Whale and Dolphin Conservation"
+    source: "Whale and Dolphin Conservation",
+    image: "https://example.com/image29.jpg"
   },
   {
     id: 30,
@@ -339,7 +369,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Le sel abaisse le point de congélation de l'eau.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "NOAA"
+    source: "NOAA",
+    image: "https://example.com/image30.jpg"
   },
   {
     id: 31,
@@ -350,7 +381,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la profondeur du point le plus profond de l'océan.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Guinness World Records"
+    source: "Guinness World Records",
+    image: "https://example.com/image31.jpg"
   },
   {
     id: 32,
@@ -361,7 +393,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Presque toute la chaleur supplémentaire finit dans l'océan.",
     category: 'climate',
     difficulty: 'medium',
-    source: "IPCC"
+    source: "IPCC",
+    image: "https://example.com/image32.jpg"
   },
   {
     id: 33,
@@ -372,7 +405,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Le son voyage beaucoup plus loin dans l'eau que dans l'air.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "Acoustical Society of America"
+    source: "Acoustical Society of America",
+    image: "https://example.com/image33.jpg"
   },
   {
     id: 34,
@@ -383,7 +417,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est aussi rapide qu'un avion commercial.",
     category: 'circulation',
     difficulty: 'hard',
-    source: "NOAA Tsunami Program"
+    source: "NOAA Tsunami Program",
+    image: "https://example.com/image34.jpg"
   },
   {
     id: 35,
@@ -394,7 +429,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Un tiers des populations de poissons est en danger.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "FAO"
+    source: "FAO",
+    image: "https://example.com/image35.jpg"
   },
   {
     id: 36,
@@ -405,7 +441,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Ces particules sont presque éternelles à l'échelle humaine.",
     category: 'pollution',
     difficulty: 'hard',
-    source: "Environmental Science & Technology"
+    source: "Environmental Science & Technology",
+    image: "https://example.com/image36.jpg"
   },
   {
     id: 37,
@@ -416,7 +453,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Un quart seulement des récifs est encore intact.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "Global Coral Reef Monitoring Network"
+    source: "Global Coral Reef Monitoring Network",
+    image: "https://example.com/image37.jpg"
   },
   {
     id: 38,
@@ -427,7 +465,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la zone où les vagues et le vent mélangent l'eau de surface.",
     category: 'circulation',
     difficulty: 'medium',
-    source: "Oceanography Society"
+    source: "Oceanography Society",
+    image: "https://example.com/image38.jpg"
   },
   {
     id: 39,
@@ -438,7 +477,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Plus de la moitié de l'oxygène marin est utilisé par les microorganismes.",
     category: 'chemistry',
     difficulty: 'hard',
-    source: "Marine Microbiology Initiative"
+    source: "Marine Microbiology Initiative",
+    image: "https://example.com/image39.jpg"
   },
   {
     id: 40,
@@ -449,7 +489,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est environ la vitesse de croissance des ongles humains.",
     category: 'biodiversity',
     difficulty: 'easy',
-    source: "Coral Reef Alliance"
+    source: "Coral Reef Alliance",
+    image: "https://example.com/image40.jpg"
   },
   {
     id: 41,
@@ -460,7 +501,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est le plan d'eau le plus salé au monde.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "Dead Sea Research Center"
+    source: "Dead Sea Research Center",
+    image: "https://example.com/image41.jpg"
   },
   {
     id: 42,
@@ -471,7 +513,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Cette espèce peut rajeunir indéfiniment.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Marine Biology Journal"
+    source: "Marine Biology Journal",
+    image: "https://example.com/image42.jpg"
   },
   {
     id: 43,
@@ -482,7 +525,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Une infime partie de ces écosystèmes est connue.",
     category: 'biodiversity',
     difficulty: 'hard',
-    source: "Seamount Biogeosciences Network"
+    source: "Seamount Biogeosciences Network",
+    image: "https://example.com/image43.jpg"
   },
   {
     id: 44,
@@ -493,7 +537,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Le filtre contient du plastique qui se dégrade très lentement.",
     category: 'pollution',
     difficulty: 'medium',
-    source: "Ocean Conservancy"
+    source: "Ocean Conservancy",
+    image: "https://example.com/image44.jpg"
   },
   {
     id: 45,
@@ -504,7 +549,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est environ 4.5 fois plus rapide que dans l'air.",
     category: 'chemistry',
     difficulty: 'medium',
-    source: "US Naval Research Laboratory"
+    source: "US Naval Research Laboratory",
+    image: "https://example.com/image45.jpg"
   },
   {
     id: 46,
@@ -515,7 +561,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La quasi-totalité des échanges internationaux passe par la mer.",
     category: 'circulation',
     difficulty: 'easy',
-    source: "International Maritime Organization"
+    source: "International Maritime Organization",
+    image: "https://example.com/image46.jpg"
   },
   {
     id: 47,
@@ -526,7 +573,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "Ces zones correspondent aux principaux courants océaniques.",
     category: 'pollution',
     difficulty: 'medium',
-    source: "NOAA Marine Debris Program"
+    source: "NOAA Marine Debris Program",
+    image: "https://example.com/image47.jpg"
   },
   {
     id: 48,
@@ -537,7 +585,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est la zone où la photosynthèse est possible.",
     category: 'biodiversity',
     difficulty: 'easy',
-    source: "Scripps Institution of Oceanography"
+    source: "Scripps Institution of Oceanography",
+    image: "https://example.com/image48.jpg"
   },
   {
     id: 49,
@@ -548,7 +597,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "La grande majorité des fonds marins n'a jamais été vue.",
     category: 'biodiversity',
     difficulty: 'medium',
-    source: "NOAA Ocean Exploration"
+    source: "NOAA Ocean Exploration",
+    image: "https://example.com/image49.jpg"
   },
   {
     id: 50,
@@ -559,7 +609,8 @@ export const quizQuestions: QuizQuestion[] = [
     hint: "C'est une température agréable pour la baignade.",
     category: 'climate',
     difficulty: 'easy',
-    source: "World Ocean Atlas"
+    source: "World Ocean Atlas",
+    image: "https://example.com/image50.jpg"
   }
 ];
 

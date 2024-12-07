@@ -6,6 +6,7 @@ import { Menu, X, Home, BarChart, HelpCircle, Heart } from 'lucide-react'
 const navItems = [
   { path: '/', label: 'Accueil', icon: Home },
   { path: '/data', label: 'Données', icon: BarChart },
+  { path: '/discover', label: 'Découvrir', icon: HelpCircle },
   { path: '/quiz', label: 'Quiz', icon: HelpCircle },
 ]
 

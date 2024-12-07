@@ -7,7 +7,7 @@ import { TopicDetailPage } from './pages/TopicDetailPage'
 import { DiscoverPage } from './pages/DiscoverPage'
 import { HealthPage } from './pages/HealthPage'
 import { DataPage } from './pages/DataPage'
-
+import { DonationPage } from './pages/DonationPage'
 function App() {
   return (
     <Router basename="/">
@@ -21,6 +21,7 @@ function App() {
           <Route path="/health" element={<HealthPage />} />
           <Route path="/data" element={<DataPage />} />
           <Route path="/topic/:topicId" element={<TopicDetailPage />} />
+          <Route path="/donate" element={<DonationPage />} />
         </Routes>
       </div>
     </Router>

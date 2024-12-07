@@ -6,6 +6,8 @@ import { InteractiveQuiz } from './InteractiveQuiz'
 import { ActionSection } from './ActionSection'
 
 export function Layout() {
+  const activeSection = 'temperature';
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -20,7 +22,7 @@ export function Layout() {
             <h2 className="text-3xl font-bold text-center mb-12">
               Comprendre les Données
             </h2>
-            <DataVisualization />
+            <DataVisualization activeSection={activeSection} />
           </div>
         </section>
 
